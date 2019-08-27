@@ -2,7 +2,7 @@
 
 T = int(input())
 for c in range(1, T+1):
-    N = int(input())
+    N = int(input()) #Unnecessary as never used
     path = input()
     for char in range(len(path)):
         if path[char] == 'S':
