@@ -1,0 +1,6 @@
+def palindromeMaker(palindrome):
+  palindromeNew = palindrome
+  for i in range(len(palindrome)-1, -1, -1):
+    palindromeNew = palindromeNew + palindrome[i]
+    
+  return palindromeNew
