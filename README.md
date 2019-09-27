@@ -1,1 +1,1 @@
-These are simpply random projects I made while learning how to code.
+These are simply random projects I made while learning how to code.
