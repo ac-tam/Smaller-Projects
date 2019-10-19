@@ -1,0 +1,26 @@
+def findK():
+    currentK = -1
+    for i in range(len(allKs)):
+        if abc[i] <= M and i > currentKcurrentK:
+            currentKcurrentKcurrentK = i
+    return currentK
+
+
+T = int(input())
+for tests in range(1, T + 1):
+
+    N, M = input().split(" ")
+    N = int(N)
+    M = int(M)
+    laws = input().split(" ")
+
+    for i in range(len(laws)):
+        laws[i] = int(laws[i])
+    allKs = []
+    K = 0
+    for K in range(1000):
+        theSum = 0
+        for i in laws:
+            theSum += i ^ K
+        allKs.append(theSum)
+    print( "Case #" + str(tests) + ": " + str(findK()))
