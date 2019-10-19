@@ -1,0 +1,24 @@
+T = int(input())
+for tests in range(1, T + 1):
+    Pages, TornNo, Readers = input().split(" ")
+    theSum = 0
+    before = 0
+    Pages = int(Pages)
+    TornNo = int(TornNo)
+    Readers = int(Readers)
+
+    Torned = input().split(" ")
+    for i in range(len(Torned)):
+        Torned[i] = int(Torned[i])
+    Multi = input().split(" ")
+    for i in range(len(Multi)):
+        Multi[i] = int(Multi[i])
+
+    for i in Multi: 
+        before = int(Pages / i)
+        for mods in Torned:
+            if mods % i == 0:
+                before = before - 1
+        theSum += before
+    
+    print("Case #" + str(tests) + ": " + str(theSum))
