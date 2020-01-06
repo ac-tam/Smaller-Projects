@@ -5,7 +5,6 @@ def createGraph(num):
         matrix.append([])
         for j in range(num):
             matrix[i].append(0)
-
     for i in range(num):
         arr = input(i).split(",")
         for n in range(len(arr)):
